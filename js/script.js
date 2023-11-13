@@ -22,3 +22,11 @@ function task1(str) {
         else
           alert("Значение неверно!");
       }
+      function task4(str) {  
+        let re = /^[^\W_]{10,}$/;
+        let flag = re.test(str);
+        if (flag)
+          alert("Значение верно!");
+        else
+          alert("Значение неверно!");
+      }
