@@ -14,3 +14,11 @@ function task1(str) {
         else
           alert("Переменная объявлена неверно!");
       }
+      function task3(str) {  
+        let re = /^[^\W_]*$/;
+        let flag = re.test(str);
+        if (flag)
+          alert("Значение верно!");
+        else
+          alert("Значение неверно!");
+      }
