@@ -22,6 +22,14 @@ function task1(str) {
         else
           alert("Значение неверно!");
       }
+      function task4(str) {  
+        let re = /^[^\W_]{10,}$/;
+        let flag = re.test(str);
+        if (flag)
+          alert("Значение верно!");
+        else
+          alert("Значение неверно!");
+      }
       function task5(str) {
           let letters = str.match(/[a-zA-Z]/g);
           let digits = str.match(/\d/g);
@@ -29,4 +37,3 @@ function task1(str) {
           console.log("Буквы:", letters.length);
           console.log("Цифры:", digits.length);
       }
-//
