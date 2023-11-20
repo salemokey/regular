@@ -30,3 +30,10 @@ function task1(str) {
         else
           alert("Значение неверно!");
       }
+      function task5(str) {
+          let letters = str.match(/[a-zA-Z]/g);
+          let digits = str.match(/\d/g);
+      
+          console.log("Буквы:", letters.length);
+          console.log("Цифры:", digits.length);
+      }
